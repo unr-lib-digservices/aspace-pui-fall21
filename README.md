@@ -1,9 +1,16 @@
-# UNR Libraries ArchivesSpace Public User Interface
+# University of Nevada, Reno Libraries ArchivesSpace Public User Interface
 
-The UNR Libraries ArchivesSpace PUI customization files and documentation can be found in this repo. 
+The Libraries ArchivesSpace PUI customization files and documentation can be found in this repo. 
 
 ## Version
-These configurations are made to [ArchivesSpace version 2.5.2](https://github.com/archivesspace/archivesspace/releases/tag/v2.5.2), though a version of the plugin is also running on 2.7.1.
+These configurations are made to [ArchivesSpace version 2.5.2](https://github.com/archivesspace/archivesspace/releases/tag/v2.5.2), though a version of the plugin is also running on 3.0.1.
+
+The original code was forked from customizations made by George Washington University Libraries.
+
+## Goals
+The goal of these customizations are as follows:
+1. Enhance the accessibility of the platform
+2. Ensure proper branding of the platform, including approved colors and logos
 
 ## Customizations for this PUI are achieved by two types of edits:
 1. Configurations to the core code configuration file config.rb, found at /path/to/aspace/config/config.rb. These configurations are described below.
@@ -37,13 +44,17 @@ AppConfig[:pui_requests_permitted_for_types] = []
 ```
 
 ## 2. Local plugin
-UNR uses the built-in "local" plugin to customize the public portal of ArchivesSpace. All of the files that we added to this plugin are in this repo, and described below.
+The Libraries use the built-in "local" plugin to customize the public portal of ArchivesSpace. All of the files that we added to this plugin are in this repo, and described below.
 * /assets/custom.css - custom CSS file, which overwrites the default styling. Explanations for each overwrite are in the custom.css file itself.
 * /assets/images/logo.png - logo image file, to replace the default ArchivesSpace logo; remember, it has to be updated in the config.rb file as well (see above).
 * /locales/en.yml - Ruby on Rails vocabulary file, where we set the header title, welcome text on home page, and other standard vocabulary terms throughout the site. Having this file in the plugin overwrites the equivalent file in the core code. 
 * /views/shared/_footer.html.erb - customized footer, which is based on and overwrites the equivalent file in the core code.
+* * /views/shared/_header.html.erb - customized footer, which is based on and overwrites the equivalent file in the core code.
 * /views/shared/_skipnav.html.erb - Adds ARIA landmark to the existing core code
 * /views/layout_head.html.erb - this file is used to "activate" the custom css file
+* /views/search/search_results.html.erb - customized search results, ensuring that they meet accessibility standards
+* /views/shared/_navigation.html.erb - customized navigation, ensuring it meets accessibility standards
+* /views/shared/_search.html.erb - customized search, ensuring that it meets accessibility standards 
 
 Further documentation on theming ArchivesSpace can be found at:
 https://github.com/archivesspace/archivesspace/blob/master/CUSTOMIZING_THEMING.md
