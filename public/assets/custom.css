@@ -53,16 +53,16 @@ body { color: #000000; }
 #header > .row { border-bottom: 0.40rem solid #76797A; }
 
 .btn-primary {
-  background-color: #1B1f22;
-  border-color: #FFF;
+  background-color: #1E3555;
+  border-color: #1E3555;
 }
 
 .btn-primary:focus,.btn-primary.focus { background-color: #d43c4e; }
-.btn-primary:hover { background-color: #76797A; }
+.btn-primary:hover { background-color: #1B1F22; }
 
 .btn-sm {
-  background-color: #1B1f22;
-  border-color: #000000;
+  background-color: #1E3555;
+  border-color: #1E3555;
 }
 
 .pagination > .active > a,
@@ -101,6 +101,24 @@ body { color: #000000; }
     list-style-type: none;
     float: left;
     text-align: left;
+}
+
+.footer-items-first-block {
+    text-align: left;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #76797A;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #76797A;
 }
 
 /* Eliminate the curves on the tabbing pills*/
