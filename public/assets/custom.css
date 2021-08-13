@@ -1,8 +1,7 @@
-/* Use official UNR colors in the header, throughout all of PUI*/
+/* Use official University of Nevada, Branding throughout the PUI*/
 
-body {
-	font-size:16px;
-}
+/* Set branding for the header*/
+
 
 #header .logo {
     float: right;
@@ -20,6 +19,13 @@ body {
 	font-weight:normal;
 }
 
+/* Separation bar between the header and the top nav*/
+
+#header > .row { border-bottom: 0.40rem solid #76797A; }
+
+
+/* Set navbar parameters*/
+
 .top-bar {
     background: #E9E9E9 !important;
     border-top: 0.0625rem solid #E9E9E9;
@@ -34,6 +40,10 @@ body {
     border: 0px solid transparent;
 }
 
+.navbar-default .navbar-nav > li > a { color: #041E42; }
+
+/* Set link colors*/
+
 a { color: #296DAC }
 
 a:hover {
@@ -44,13 +54,19 @@ a:focus {
   color: #d20000;
 }
 
+/* Set heading colors*/
 h1, .h1 { color: #041E42 }
 h2, .h2 { color: #041E42; }
 h3 { color: #041E42; }
 
+/* Set fontsize and colors for the body text to meeet accessibility standards*/
+body {
+    font-size:16px;
+}
+
 body { color: #000000; }
 
-#header > .row { border-bottom: 0.40rem solid #76797A; }
+/* Set button formating to meeet accessibility standards*/
 
 .btn-primary {
   background-color: #1E3555;
@@ -60,100 +76,10 @@ body { color: #000000; }
 .btn-primary:focus,.btn-primary.focus { background-color: #d43c4e; }
 .btn-primary:hover { background-color: #1B1F22; }
 
-.btn-sm {
+/*.btn-sm {
   background-color: #1E3555;
   border-color: #1E3555;
-}
-
-.pagination > .active > a,
-.pagination > .active > a:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span,
-.pagination > .active > span:hover,
-.pagination > .active > span:focus {
-  background-color: #364B68;
-  border-color: #364B68;
-}
-.pagination > li > a, .pagination > li > span { color: #041E42; }
-
-.navbar-default .navbar-nav > li > a { color: #041E42; }
-
-.record-type-badge.accession { color: #000000; }
-.record-type-badge.agent { color: #000000; } 
-.record-type-badge.archival_object { color: #000000; } 
-.record-type-badge.digital_object { color: #000000; } 
-.record-type-badge.repository { color: #000000; }
-.record-type-badge.resource { color: #000000; }
-.record-type-badge.subject { color: #000000; }
-
-.record-type-badge.digital_object { color: #000000; }
-.record-type-badge.digital_object { border-color: #000000; }
-.record-type-badge.archival_object { border-color: #000000; }
-.record-type-badge.archival_object { color: #000000; }
-.top_container { color: #000000; }
-
-
-/* Style custom UNR footer content*/
-.panel-footer {
-    margin-top: 4em;
-}
-.panel-footer ul.footer-list {
-    list-style-type: none;
-    float: left;
-    text-align: left;
-}
-
-.footer-items-first-block {
-    text-align: left;
-}
-
-hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 0;
-    border-top: 1px solid #76797A;
-}
-
-blockquote {
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #76797A;
-}
-
-/* Eliminate the curves on the tabbing pills*/
-.tabbing.nav-pills>li>a.active {
-    background-color: #364B68;
-    color: #ffffff;
-}
-
-.tabbing.nav-pills > li:first-child a {
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-}
-
-.tabbing.nav-pills > li > a {
-	margin-bottom: 0;
-	margin-right: 0;
-	border-radius: 0;
-	background-color: #000;
-}
-
-.tabbing.nav-pills > li:last-child a {
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-}
-
-.tabbing.nav-pills > li > a {
-	margin-left: 0px;
-}
-
-.nav>li.disabled>a:focus {
-    color: #041E42;
-    text-decoration: none;
-    cursor: not-allowed;
-    background-color: transparent;
-}
+}*/
 
 .btn {
     display: inline-block;
@@ -178,4 +104,97 @@ blockquote {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+
+/* Set breadcrumb and badge formatting to meeet accessibility standards*/
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  background-color: #364B68;
+  border-color: #364B68;
+}
+
+.pagination > li > a, .pagination > li > span { color: #041E42; }
+
+
+.record-type-badge.accession { color: #000000; }
+.record-type-badge.agent { color: #000000; } 
+.record-type-badge.archival_object { color: #000000; } 
+.record-type-badge.digital_object { color: #000000; } 
+.record-type-badge.repository { color: #000000; }
+.record-type-badge.resource { color: #000000; }
+.record-type-badge.subject { color: #000000; }
+
+.record-type-badge.digital_object { color: #000000; }
+.record-type-badge.digital_object { border-color: #000000; }
+.record-type-badge.archival_object { border-color: #000000; }
+.record-type-badge.archival_object { color: #000000; }
+.top_container { color: #000000; }
+
+/* Eliminate the curves on the tabbing pills*/
+
+.tabbing.nav-pills>li>a.active {
+    background-color: #364B68;
+    color: #ffffff;
+}
+
+.tabbing.nav-pills > li:first-child a {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.tabbing.nav-pills > li > a {
+    margin-bottom: 0;
+    margin-right: 0;
+    border-radius: 0;
+    background-color: #000;
+}
+
+.tabbing.nav-pills > li:last-child a {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.tabbing.nav-pills > li > a {
+    margin-left: 0px;
+}
+
+.nav>li.disabled>a:focus {
+    color: #041E42;
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+}
+
+/* Branding for custom footer content*/
+.panel-footer {
+    margin-top: 4em;
+}
+.panel-footer ul.footer-list {
+    list-style-type: none;
+    float: left;
+    text-align: left;
+}
+
+.footer-items-first-block {
+    text-align: left;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #76797A;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 0px solid #f5f5f5;
 }
