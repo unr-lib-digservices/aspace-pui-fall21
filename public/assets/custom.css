@@ -47,11 +47,11 @@
 a { color: #296DAC }
 
 a:hover {
-	color: #E70041;
+	color: #D0183C;
 }
 
 a:focus {
-  color: #E70041;
+  color: #D0183C;
 }
 
 /* Set heading colors*/
@@ -73,7 +73,7 @@ body { color: #000000; }
   border-color: #1E3555;
 }
 
-.btn-primary:focus,.btn-primary.focus { background-color: #E70041; }
+.btn-primary:focus,.btn-primary.focus { background-color: #D0183C; }
 .btn-primary:hover { background-color: #1B1F22; }
 
 .btn {
