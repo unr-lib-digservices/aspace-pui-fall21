@@ -21,15 +21,15 @@
 
 /* Separation bar between the header and the top nav*/
 
-#header > .row { border-bottom: 0.40rem solid #76797A; }
+#header > .row { border-bottom: 0.30rem solid #76797A; }
 
 
 /* Set navbar parameters*/
 
 .top-bar {
-    background: #E9E9E9 !important;
-    border-top: 0.0625rem solid #E9E9E9;
-    border-bottom: 0.0625rem solid #E9E9E9;
+    background: #f5f5f5 !important;
+    border-top: 0.0625rem solid #f5f5f5;
+    border-bottom: 0.0525rem solid #ddd;
     float: none !important;
 }
 
@@ -41,6 +41,11 @@
 }
 
 .navbar-default .navbar-nav > li > a { color: #041E42; }
+
+.navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #D0183C;
+    text-decoration: underline;
+}
 
 /* Set link colors*/
 
@@ -74,7 +79,7 @@ body { color: #000000; }
 }
 
 .btn-primary:focus,.btn-primary.focus { background-color: #D0183C; }
-.btn-primary:hover { background-color: #1B1F22; }
+.btn-primary:hover { background-color: #D0183C; }
 
 .btn {
     display: inline-block;
