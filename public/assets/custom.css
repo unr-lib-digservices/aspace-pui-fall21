@@ -78,8 +78,8 @@ body { color: #000000; }
   border-color: #1E3555;
 }
 
-.btn-primary:focus,.btn-primary.focus { background-color: #D0183C; }
-.btn-primary:hover { background-color: #D0183C; }
+.btn-primary:focus,.btn-primary.focus { background-color: #e70041; }
+.btn-primary:hover { background-color: #e70041; }
 
 .btn {
     display: inline-block;
