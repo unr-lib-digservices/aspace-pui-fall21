@@ -5,6 +5,8 @@ The Libraries ArchivesSpace PUI customization files and documentation can be fou
 ## Version
 These configurations are made to [ArchivesSpace version 2.5.2](https://github.com/archivesspace/archivesspace/releases/tag/v2.5.2), though a version of the plugin is also running on 3.0.1.
 
+We have gradually be adapting or dropping some parts of the plugin, given improvements in core code accessibility.
+
 The original code was forked from customizations made by George Washington University Libraries.
 
 ## Goals
@@ -52,9 +54,7 @@ The Libraries use the built-in "local" plugin to customize the public portal of 
 * * /views/shared/_header.html.erb - customized footer, which is based on and overwrites the equivalent file in the core code.
 * /views/shared/_skipnav.html.erb - Adds ARIA landmark to the existing core code
 * /views/layout_head.html.erb - this file is used to "activate" the custom css file
-* /views/search/search_results.html.erb - customized search results, ensuring that they meet accessibility standards
-* /views/shared/_navigation.html.erb - customized navigation, ensuring it meets accessibility standards
-* /views/shared/_search.html.erb - customized search, ensuring that it meets accessibility standards 
+* /views/shared/_navigation.html.erb - customized navigation, ensuring it meets accessibility standards 
 
 Further documentation on theming ArchivesSpace can be found at:
 https://github.com/archivesspace/archivesspace/blob/master/CUSTOMIZING_THEMING.md
